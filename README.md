@@ -1,2 +1,3 @@
 # ReacTutorials
-Repository that contains some small projects that I want to embark on in javascript
+
+Repositpry that includes various tutorials for React and React Native
