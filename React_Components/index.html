@@ -14,18 +14,28 @@
 
     <script type="text/babel">
         class App extends React.Component {
+            state = {
+                name: 'Bori',
+                age: 22
+            }
+
             render() {
 
                 return (
                     <div classNmae="app-content">
                         <h1>Hey, ninjas </h1>
-                        <p> { Math.random() * 10 } </p>
+                        <p>My name is: { this.state.name } and I am {this.state.age}</p>
                     </div>
                 )
             }
         }
 
-        ReactDOM.render(<App />, document.getElementById('app'));
+        const rootElement = document.getElementById("app");
+
+        const root = ReactDOM.createRoot(rootElement);
+        root.render()
+
+        root.render(<App />);
     </script>
 
 </body>
