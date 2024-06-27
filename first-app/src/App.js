@@ -1,3 +1,4 @@
+import Ninjas from "./NInjas";
 
 function App() {
   return (
@@ -7,14 +8,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
           You need to shut up blud
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Ninjas/>
       </header>
     </div>
   );
