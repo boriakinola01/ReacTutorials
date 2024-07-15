@@ -1,14 +1,17 @@
-import { Component } from "react";
+import React from "react";
 
-function Ninjas({ ninjas }){
+const Ninjas = ({ ninjas }) => {
 
     const ninjaList = ninjas.map(ninja => {
-        return (
-            <div className="ninja" key={ ninja.id } >
-                <div>Name: { ninja.name }</div>
-                <div>Age: { ninja.age }</div>
-            </div>
-        )
+
+        if (ninja.age > 21) {
+            return (
+                <div className="ninja" key={ ninja.id } >
+                    <div>Name: { ninja.name }</div>
+                    <div>Age: { ninja.age }</div>
+                </div>
+            )
+        }
     })
 
     return(

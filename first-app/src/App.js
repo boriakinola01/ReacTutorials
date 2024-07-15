@@ -1,9 +1,10 @@
 import Ninjas from "./NInjas";
 import React, { useState } from 'react';
+// import OpeningHoursEditor from './OpeningHoursEditor';
 
 function App() {
 
-  const [ninjas, setNinjas] = useState([
+  const [ninjas] = useState([
     {name: 'Bori', age: 22, id: 1},
     {name: 'Tishe', age: 21, id: 2},
     {name: 'Enoch', age: 21, id: 3},
@@ -23,6 +24,20 @@ function App() {
       </header>
     </div>
   );
+
+  // const [openingHours, setOpeningHours] = useState('Mo-Fr 09:00-18:00');
+
+  // const handleOpeningHoursChange = (newOpeningHours) => {
+  //   setOpeningHours(newOpeningHours);
+  // };
+
+  // return (
+  //   <div>
+  //     <h1>Opening Hours Editor</h1>
+  //     <OpeningHoursEditor value={openingHours} onChange={handleOpeningHoursChange} />
+  //     <p>Current Opening Hours: {openingHours}</p>
+  //   </div>
+  // );
 }
 
 export default App;
